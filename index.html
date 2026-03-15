@@ -8,94 +8,139 @@
 
 <title>Teja Suryapogu | Portfolio</title>
 
-<!-- SEO -->
-
 <meta name="description" content="Teja Suryapogu - Python Full Stack Developer skilled in Django, REST APIs, SQL, HTML, CSS, JavaScript and backend development.">
 <meta name="keywords" content="Teja Suryapogu, Python Developer, Django Developer, Full Stack Developer, Backend Developer, Portfolio">
 <meta name="author" content="Teja Suryapogu">
 
-<!-- Fonts -->
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Bootstrap -->
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Icons -->
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <link rel="icon" href="SP.jpeg">
 
 <style>
 
-html{
-scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-font-family:'Poppins',sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-section{
-padding:80px 0;
+section {
+  padding: 80px 0;
 }
 
-.hero-img{
-max-width:400px;
+.hero-img {
+  max-width: 400px;
 }
 
-.card{
-height:100%;
-transition:0.35s ease;
-border:none;
+.card {
+  height: 100%;
+  transition: 0.35s ease;
+  border: none;
 }
 
-.card:hover{
-transform:translateY(-10px) scale(1.02);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-footer a:hover{
-color:#0d6efd !important;
+footer a:hover {
+  color: #0d6efd !important;
 }
 
-.lead{
-font-size:18px;
-line-height:1.7;
-color:#444;
+.lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
 }
 
-.badge{
-font-size:14px;
-border-radius:8px;
+.badge {
+  font-size: 14px;
+  border-radius: 8px;
 }
 
-section h2{
-position:relative;
-display:inline-block;
-padding-bottom:10px;
+section h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
-section h2::after{
-content:"";
-width:60px;
-height:3px;
-background:#0d6efd;
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-bottom:0;
+section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #0d6efd;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
-.btn{
-transition:0.3s;
+.btn {
+  transition: 0.3s;
 }
 
-.btn:hover{
-transform:translateY(-2px);
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ── Skills Rings ── */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.ring-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.ring-svg {
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 7;
+}
+
+.ring-fg {
+  fill: none;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-dasharray: 251.2;
+  stroke-dashoffset: 251.2;
+  transition: stroke-dashoffset 1.4s cubic-bezier(.4,0,.2,1);
+}
+
+.ring-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-pct {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1;
+}
+
+.skill-name {
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  font-weight: 500;
 }
 
 </style>
@@ -105,351 +150,268 @@ transform:translateY(-2px);
 <body>
 
 <!-- NAVBAR -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
 
-<div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#">Teja Suryapogu</a>
 
-<a class="navbar-brand fw-bold text-primary" href="#">Teja Suryapogu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
 
-<div class="collapse navbar-collapse" id="navbarNav">
+      <a href="https://drive.google.com/file/d/1tXTQGhGRS2TRToXd1J12JP340aldB3ve/view?usp=sharing"
+         target="_blank"
+         class="btn btn-outline-primary me-2">
+        Resume
+      </a>
 
-<ul class="navbar-nav mx-auto">
+      <a href="#contact" class="btn btn-primary">
+        Hire Me
+      </a>
+    </div>
 
-<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-</ul>
-
-<a href="https://drive.google.com/file/d/1tXTQGhGRS2TRToXd1J12JP340aldB3ve/view?usp=sharing"
-target="_blank"
-class="btn btn-outline-primary me-2">
-
-Resume
-
-</a>
-
-<a href="#contact" class="btn btn-primary">
-
-Hire Me
-
-</a>
-
-</div>
-
-</div>
-
+  </div>
 </nav>
 
 
 <!-- HERO -->
-
 <section id="home">
+  <div class="container">
+    <div class="row align-items-center">
 
-<div class="container">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold mb-3">
+          Hi, I'm Teja Suryapogu 👋
+        </h1>
 
-<div class="row align-items-center">
+        <h3 class="text-primary mb-3">
+          Full Stack Python Developer | Django | REST APIs | HTML | CSS | JavaScript | SQL | Git | Postman
+        </h3>
 
-<div class="col-lg-6">
+        <p class="lead">
+          Full Stack Python Developer passionate about building scalable and efficient web applications using modern technologies.
+        </p>
 
-<h1 class="display-5 fw-bold mb-3">
+        <p class="lead">
+          My technical expertise includes Python, Django, Django REST Framework, HTML, CSS, JavaScript, Bootstrap, SQL, and REST API development.
+        </p>
 
-Hi, I'm Teja Suryapogu 👋
+        <p class="mt-3 text-muted">
+          Open to Python Developer / Backend Developer opportunities.
+        </p>
 
-</h1>
+        <a href="#projects" class="btn btn-primary btn-lg me-2">
+          View Projects
+        </a>
 
-<h3 class="text-primary mb-3">
+        <a href="https://drive.google.com/file/d/1tXTQGhGRS2TRToXd1J12JP340aldB3ve/view?usp=sharing"
+           target="_blank"
+           class="btn btn-outline-secondary btn-lg">
+          Download Resume
+        </a>
 
-Full Stack Python Developer | Django | REST APIs | HTML | CSS | JavaScript | SQL | Git | Postman
+        <div class="mt-4">
+          <a href="mailto:spteja47@gmail.com" class="btn btn-outline-dark me-2">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+          <a href="https://github.com/Sp-Teja" target="_blank" class="btn btn-dark me-2">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/teja-sp" target="_blank" class="btn btn-primary">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
 
-</h3>
+      <div class="col-lg-6 text-center">
+        <img src="SP.jpeg" class="img-fluid rounded hero-img">
+      </div>
 
-<p class="lead">
-
-Full Stack Python Developer passionate about building scalable and efficient web applications using modern technologies.
-
-</p>
-
-<p class="lead">
-
-My technical expertise includes Python, Django, Django REST Framework, HTML, CSS, JavaScript, Bootstrap, SQL, and REST API development.
-
-</p>
-
-<p class="mt-3 text-muted">
-
-Open to Python Developer / Backend Developer opportunities.
-
-</p>
-
-<a href="#projects" class="btn btn-primary btn-lg me-2">
-
-View Projects
-
-</a>
-
-<a href="https://drive.google.com/file/d/1tXTQGhGRS2TRToXd1J12JP340aldB3ve/view?usp=sharing"
-target="_blank"
-class="btn btn-outline-secondary btn-lg">
-
-Download Resume
-
-</a>
-
-<div class="mt-4">
-
-<a href="mailto:spteja47@gmail.com" class="btn btn-outline-dark me-2">
-
-<i class="fa-solid fa-envelope"></i> Email
-
-</a>
-
-<a href="https://github.com/Sp-Teja" target="_blank" class="btn btn-dark me-2">
-
-<i class="fa-brands fa-github"></i> GitHub
-
-</a>
-
-<a href="https://www.linkedin.com/in/teja-sp" target="_blank" class="btn btn-primary">
-
-<i class="fa-brands fa-linkedin"></i> LinkedIn
-
-</a>
-
-</div>
-
-</div>
-
-<div class="col-lg-6 text-center">
-
-<img src="SP.jpeg" class="img-fluid rounded hero-img">
-
-</div>
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
 
 <!-- ABOUT -->
-
 <section id="about" class="bg-light">
-
-<div class="container text-center">
-
-<h2 class="mb-4">About Me</h2>
-
-<p class="lead mx-auto" style="max-width:700px;">
-
-Python Full Stack Developer with strong knowledge in Python, Django, REST APIs, HTML, CSS, Bootstrap and SQL.
-
-</p>
-
-</div>
-
+  <div class="container text-center">
+    <h2 class="mb-4">About Me</h2>
+    <p class="lead mx-auto" style="max-width:700px;">
+      Python Full Stack Developer with strong knowledge in Python, Django, REST APIs, HTML, CSS, Bootstrap and SQL.
+    </p>
+  </div>
 </section>
 
 
 <!-- PROJECTS -->
-
 <section id="projects">
+  <div class="container">
+    <h2 class="text-center mb-5">My Projects</h2>
 
-<div class="container">
+    <div class="row g-4">
 
-<h2 class="text-center mb-5">My Projects</h2>
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="jpb.png" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Job Portal Backend API</h5>
+            <ul>
+              <li>Built RESTful Job Portal backend using Django and DRF.</li>
+              <li>Implemented JWT authentication.</li>
+              <li>Created Job CRUD APIs.</li>
+              <li>Filtering and pagination for job search.</li>
+            </ul>
+            <div class="mb-3">
+              <span class="badge bg-dark">Python</span>
+              <span class="badge bg-success">Django</span>
+              <span class="badge bg-primary">DRF</span>
+              <span class="badge bg-secondary">SQL</span>
+            </div>
+            <a href="https://github.com/Sp-Teja" target="_blank" class="btn btn-dark btn-sm">
+              <i class="fa-brands fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
 
-<div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="mrs.png" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Movie Recommendation System</h5>
+            <ul>
+              <li>Content-based movie recommendation system.</li>
+              <li>Used Pandas, NumPy, Scikit-learn.</li>
+              <li>Cosine similarity algorithm.</li>
+            </ul>
+            <div class="mb-3">
+              <span class="badge bg-dark">Python</span>
+              <span class="badge bg-success">Pandas</span>
+              <span class="badge bg-warning text-dark">NumPy</span>
+              <span class="badge bg-info text-dark">Scikit Learn</span>
+            </div>
+            <a href="https://github.com/Sp-Teja" target="_blank" class="btn btn-dark btn-sm">
+              <i class="fa-brands fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
 
-
-<div class="col-md-6">
-
-<div class="card shadow-sm">
-
-<img src="jpb.png" class="card-img-top">
-
-<div class="card-body d-flex flex-column">
-
-<h5 class="card-title fw-bold">Job Portal Backend API</h5>
-
-<ul>
-
-<li>Built RESTful Job Portal backend using Django and DRF.</li>
-<li>Implemented JWT authentication.</li>
-<li>Created Job CRUD APIs.</li>
-<li>Filtering and pagination for job search.</li>
-
-</ul>
-
-<div class="mb-3">
-
-<span class="badge bg-dark">Python</span>
-<span class="badge bg-success">Django</span>
-<span class="badge bg-primary">DRF</span>
-<span class="badge bg-secondary">SQL</span>
-
-</div>
-
-<a href="https://github.com/Sp-Teja"
-target="_blank"
-class="btn btn-dark btn-sm">
-
-<i class="fa-brands fa-github"></i> View Code
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="col-md-6">
-
-<div class="card shadow-sm">
-
-<img src="mrs.png" class="card-img-top">
-
-<div class="card-body d-flex flex-column">
-
-<h5 class="card-title fw-bold">Movie Recommendation System</h5>
-
-<ul>
-
-<li>Content-based movie recommendation system.</li>
-<li>Used Pandas, NumPy, Scikit-learn.</li>
-<li>Cosine similarity algorithm.</li>
-
-</ul>
-
-<div class="mb-3">
-
-<span class="badge bg-dark">Python</span>
-<span class="badge bg-success">Pandas</span>
-<span class="badge bg-warning text-dark">NumPy</span>
-<span class="badge bg-info text-dark">Scikit Learn</span>
-
-</div>
-
-<a href="https://github.com/Sp-Teja"
-target="_blank"
-class="btn btn-dark btn-sm">
-
-<i class="fa-brands fa-github"></i> View Code
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
 
 <!-- SKILLS -->
-
 <section id="skills" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">My Skills</h2>
 
-<div class="container">
+    <div id="skillsGrid"
+      style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:2.5rem;justify-items:center;max-width:750px;margin:0 auto;">
+    </div>
 
-<h2 class="text-center mb-5">My Skills</h2>
-
-<div class="row">
-
-<div class="col-md-6">
-
-<p>Python</p>
-<div class="progress mb-3"><div class="progress-bar bg-primary" style="width:85%">85%</div></div>
-
-<p>Django</p>
-<div class="progress mb-3"><div class="progress-bar bg-success" style="width:80%">80%</div></div>
-
-<p>HTML</p>
-<div class="progress mb-3"><div class="progress-bar bg-warning text-dark" style="width:90%">90%</div></div>
-
-</div>
-
-<div class="col-md-6">
-
-<p>CSS</p>
-<div class="progress mb-3"><div class="progress-bar bg-info text-dark" style="width:75%">75%</div></div>
-
-<p>Bootstrap</p>
-<div class="progress mb-3"><div class="progress-bar bg-secondary" style="width:85%">85%</div></div>
-
-<p>SQL</p>
-<div class="progress mb-3"><div class="progress-bar bg-dark" style="width:70%">70%</div></div>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 
 <!-- CONTACT -->
-
 <section id="contact">
-
-<div class="container">
-
-<h2 class="text-center mb-4">Contact Me</h2>
-
-<div class="text-center">
-
-<a href="mailto:spteja47@gmail.com" class="btn btn-outline-dark me-2">
-
-<i class="fa-solid fa-envelope"></i> Email
-
-</a>
-
-<a href="https://github.com/Sp-Teja" target="_blank" class="btn btn-dark me-2">
-
-<i class="fa-brands fa-github"></i> GitHub
-
-</a>
-
-<a href="https://www.linkedin.com/in/teja-sp" target="_blank" class="btn btn-primary">
-
-<i class="fa-brands fa-linkedin"></i> LinkedIn
-
-</a>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <div class="text-center">
+      <a href="mailto:spteja47@gmail.com" class="btn btn-outline-dark me-2">
+        <i class="fa-solid fa-envelope"></i> Email
+      </a>
+      <a href="https://github.com/Sp-Teja" target="_blank" class="btn btn-dark me-2">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/teja-sp" target="_blank" class="btn btn-primary">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
 </section>
 
 
 <!-- FOOTER -->
-
 <footer class="bg-dark text-light py-4 text-center">
-
-© 2026 Teja Suryapogu
-
+  &copy; 2026 Teja Suryapogu
 </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+<script>
+  const skills = [
+    { name: "Python",     pct: 85, color: "#378ADD" },
+    { name: "Django",     pct: 80, color: "#1D9E75" },
+    { name: "DRF",        pct: 78, color: "#7F77DD" },
+    { name: "HTML",       pct: 90, color: "#D85A30" },
+    { name: "CSS",        pct: 75, color: "#D4537E" },
+    { name: "Bootstrap",  pct: 85, color: "#533AB7" },
+    { name: "JavaScript", pct: 65, color: "#BA7517" },
+    { name: "SQL",        pct: 70, color: "#639922" },
+    { name: "Git",        pct: 75, color: "#888780" },
+    { name: "REST APIs",  pct: 80, color: "#185FA5" },
+  ];
 
+  const R = 40;
+  const C = 2 * Math.PI * R;
+  const grid = document.getElementById('skillsGrid');
+
+  skills.forEach(s => {
+    const div = document.createElement('div');
+    div.className = 'skill-item';
+    div.innerHTML = `
+      <div class="ring-wrap">
+        <svg class="ring-svg" width="100" height="100" viewBox="0 0 100 100">
+          <circle class="ring-bg" cx="50" cy="50" r="${R}"/>
+          <circle class="ring-fg" cx="50" cy="50" r="${R}" stroke="${s.color}" data-pct="${s.pct}"/>
+        </svg>
+        <div class="ring-label">
+          <span class="ring-pct" data-target="${s.pct}">0%</span>
+        </div>
+      </div>
+      <span class="skill-name">${s.name}</span>`;
+    grid.appendChild(div);
+  });
+
+  function animateRings() {
+    document.querySelectorAll('.ring-fg').forEach(el => {
+      const pct = +el.dataset.pct;
+      el.style.strokeDashoffset = C - (C * pct / 100);
+    });
+    document.querySelectorAll('.ring-pct').forEach(el => {
+      const target = +el.dataset.target;
+      let cur = 0;
+      const step = () => {
+        cur = Math.min(cur + 2, target);
+        el.textContent = cur + '%';
+        if (cur < target) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  const obs = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      animateRings();
+      obs.disconnect();
+    }
+  }, { threshold: 0.2 });
+
+  obs.observe(grid);
+</script>
+
+</body>
 </html>
